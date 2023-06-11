@@ -1,0 +1,421 @@
+* {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.bar-gov {
+  background-color: #f1f1f1;
+  height: 35px;
+  letter-spacing: -0.24px;
+}
+
+.bar-gov ul li {
+  display: inline-block;
+  padding-right: 8px;
+  color: #949494;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.bar-right {
+  padding: 7px 200px 10px;
+  width: 285px;
+  border-right: 1px solid #d7d7d7;
+}
+
+#section-2 {
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #b90e0a;
+  padding: 7px 10px 10px;
+  border-right: 1px solid #d7d7d7;
+}
+
+.modal-button {
+  border: 0;
+}
+.accessibility-button {
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #fff;
+  background: #3681a6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 0;
+}
+
+.accessibility-button p {
+  padding: 15px 0 0 5px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.button-body-access {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  background: #fff;
+  width: 150px;
+  height: 80px;
+  border-radius: 20px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #3681a6;
+  text-align: center;
+  letter-spacing: -0.408px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-body-access:hover {
+  background: #3681a6;
+  color: #fff;
+}
+
+.button-body-access img {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  color: #3681a6;
+}
+
+.button-body-access svg:hover path {
+  fill: #fff;
+}
+
+.modal-body-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 350px;
+  margin-bottom: 80px;
+}
+
+/* Navbar container */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul.topnav {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 45px;
+  top: 35px;
+  background-color: #3e92a0;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 17px 26px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+ul.topnav li:hover a:not(.active) {
+  background-color: #fff;
+  color: #3e92a0;
+  width: 210px;
+  height: 56px;
+}
+
+ul.topnav li a.active:hover {
+  background-color: #fff;
+  color: #3e92a0;
+}
+
+ul.topnav li.right {
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav,
+  ul.topnav {
+    position: unset;
+  }
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+ul.topnav .dropdown-content {
+  display: none;
+  position: absolute;
+}
+ul.topnav .dropdown-content a {
+  color: black;
+}
+
+ul.topnav .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+ul.topnav li:hover a:hover {
+  background-color: #3e92a0;
+  color: #fff;
+}
+
+.style-section {
+  background: url("../img/banner-sept-2.png") no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: inherit;
+  margin-top: 55px;
+  width: 100%;
+  height: 362px;
+}
+
+.buttons-banner {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin: 20px 40px 0 0;
+  width: 115px;
+  height: 41px;
+}
+.buttons-banner button {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 0;
+  color: #3e92a0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-banner button:hover {
+  background: #3e92a0;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  background-color: #ededed;
+  padding: 60px 0;
+}
+
+.carousel {
+  width: 80%;
+  background-color: #ededed;
+}
+
+.news-section {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.news {
+  background: url("../img/news-bg.png") no-repeat center center;
+  width: 40%;
+  height: 550px;
+}
+
+.news-text {
+  margin: 60px 74px;
+}
+
+.news-text h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.news-text h1:hover {
+  color: #3681a6;
+}
+
+.news-text p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  color: #8f8f8f;
+}
+
+.news-text span {
+  font-size: 20px;
+}
+
+.news-text a {
+  text-decoration: none;
+}
+
+.news-text a:hover {
+  text-decoration: underline;
+  color: #3681a6;
+}
+
+.more-link {
+  margin: 80px;
+  display: flex;
+  justify-content: right;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #3681a6;
+}
+
+.more-link a {
+  text-decoration: none;
+  color: #3681a6;
+}
+
+.more-link a:hover {
+  text-decoration: underline;
+  color: #3681a6;
+}
+
+.buttons-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.buttons-info h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 63px;
+  text-align: left;
+  color: #3681a6;
+  position: absolute;
+}
+
+.buttons-body-info {
+  margin: 28px;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: #3681a6;
+  width: 200px;
+  height: 130px;
+  border-radius: 20px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.408px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-body-info:hover {
+  background: #fff;
+  color: #3681a6;
+}
+
+.buttons-body-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 60%;
+}
+
+.footer {
+  background-color: #3e92a0;
+  width: auto;
+  height: 1180px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: #fff;
+}
+
+.column h3 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.logo-ufpr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  align-items: flex-start;
+}
+
+.side-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.408px;
+}
+
+.footer-icons a {
+  text-decoration: none;
+}
+
+.footer-icons svg:hover path {
+  fill: #d8d8d8;
+}
