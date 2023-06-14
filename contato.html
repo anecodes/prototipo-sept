@@ -11,6 +11,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.3.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script
@@ -28,6 +29,7 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -459,314 +461,343 @@
       </aside>
     </section>
 
-    <section>
-      <img
-        src="img/carousel-1.png"
-        alt="Carrossel cursos"
-        style="width: 100%"
-      />
-    </section>
-
-    <!--Carrossel info-->
-    <section class="info">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide carousel"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner carousel-img">
-          <div class="carousel-item active">
-            <img src="img/img-colegiado.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/img/img-especializacao.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/img-informativo.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/img-nte.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block"></div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="container" style="margin-bottom: 60px">
+      <div class="text-left mt-5">
+        <h1 style="color: #3681a6">Contato</h1>
       </div>
-    </section>
 
-    <!--Notícias-->
-    <div
-      style="
-        margin: 60px 90px;
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 63px;
-        color: #3681a6;
-      "
-    >
-      <h1>Notícias</h1>
+      <div class="row" style="padding: 10px 0">
+        <div class="col-lg-7 mx-auto">
+          <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+              <div class="container">
+                <form id="contact-form" role="form">
+                  <div class="controls">
+                    <div class="row" style="padding: 10px 0">
+                      <div class="col-md-6">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form_name"
+                            >Nome<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Digite o seu primeiro nome"
+                            required="required"
+                            data-error="É necessário digitar um primeiro nome"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form_lastname"
+                            >Sobrenome<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_lastname"
+                            type="text"
+                            name="surname"
+                            class="form-control"
+                            placeholder="Digite o seu sobrenome"
+                            required="required"
+                            data-error="É necessário digitar pelo menos um sobrenome"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form-email"
+                            >E-mail<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="nome@email.com"
+                            required="required"
+                            data-error="Valid email is required."
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form_phone"
+                            >Telefone<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_phone"
+                            type="number"
+                            name="phone"
+                            class="form-control"
+                            placeholder="(XX) XXXX-XXXX"
+                            data-error="É
+                          necessário digitar pelo menos um telefone"
+                            required
+                            maxlength="12"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px 0">
+                      <div class="col-md-6">
+                        <label for="form_ufpr"
+                          >É servidor ou estudante da UFPR?<font color="#ff5050"
+                            >*</font
+                          ></label
+                        >
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault1"
+                          >
+                            Sim
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault2"
+                          >
+                            Não
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_phone">Celular</label>
+                          <input
+                            id="form_phone"
+                            type="number"
+                            name="phone"
+                            class="form-control"
+                            placeholder="(XX) XXXX-XXXX"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form_need"
+                            >Especifique o motivo do contato</label
+                          >
+                          <select
+                            id="form_need"
+                            name="need"
+                            class="form-control"
+                            required="required"
+                            data-error="Especifique o motivo"
+                          >
+                            <option value="" selected disabled>
+                              --Selecione--
+                            </option>
+                            <option>Informações sobre o SEPT</option>
+                            <option>Graduação ou Especialização</option>
+                            <option>Pesquisa e Extensão</option>
+                            <option>Processos Seletivos</option>
+                            <option>Outros</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form_phone"
+                            >GRR (Caso seja estudante da UFPR)</label
+                          >
+                          <input
+                            id="form_grr"
+                            type="number"
+                            name="grr"
+                            class="form-control"
+                            placeholder="XXXXXXXX"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 style="text-align: left; margin-top: 20px">
+                        Endereço
+                      </h5>
+                    </div>
+                    <div class="row" style="padding: 10px 0">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_street"
+                            >Logradouro<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_street"
+                            type="text"
+                            name="street"
+                            class="form-control"
+                            placeholder="Digite o nome da rua"
+                            required="required"
+                            data-error="É necessário digitar o nome da rua"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_nh"
+                            >Bairro<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_nh"
+                            type="text"
+                            name="nh"
+                            class="form-control"
+                            placeholder="Digite o bairro"
+                            required="required"
+                            data-error="É necessário digitar o bairro"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="padding: 10px 0">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_hnumber"
+                            >Número<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_hnumber"
+                            type="number"
+                            name="hnumber"
+                            class="form-control"
+                            placeholder="Digite o número da casa"
+                            required="required"
+                            data-error="É necessário digitar o número da casa"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_city"
+                            >Cidade<font color="#ff5050">*</font></label
+                          >
+                          <input
+                            id="form_city"
+                            type="text"
+                            name="city"
+                            class="form-control"
+                            placeholder="Digite a cidade"
+                            required="required"
+                            data-error="É necessário digitar a cidade"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="padding: 10px 0">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_compl">Complemento</label>
+                          <input
+                            id="form_compl"
+                            type="text"
+                            name="compl"
+                            class="form-control"
+                            placeholder="Digite o complemento do endereço"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_message"
+                            >Estado<font color="#ff5050">*</font></label
+                          >
+                          <select
+                            id="form_state"
+                            class="form-select"
+                            aria-label="Estado"
+                            required="required"
+                          >
+                            <option disabled="disabled" selected="selected">
+                              Selecione
+                            </option>
+                            <
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group" style="padding: 10px 0">
+                          <label for="form_message">Mensagem</label>
+                          <textarea
+                            id="form_message"
+                            name="message"
+                            class="form-control"
+                            placeholder="Escreva aqui a sua mensagem"
+                            rows="4"
+                            required="required"
+                            data-error="Escreva a mensagem para ser enviada"
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <div class="col-md-8">
+                        <button type="submit" id="botao" class="btn-send">
+                          Enviar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /.8 -->
+        </div>
+        <!-- /.row-->
+      </div>
     </div>
-    <section class="news-section">
-      <div class="news">
-        <div class="news-text">
-          <a href="#">
-            <h1>
-              Aprovada a Moção pela revogação da Base Nacional Comum Curricular…
-            </h1>
-          </a>
-          <p>
-            Publicado em: 19 de abril de 2023 por Allan Fernando<br />
-            Justino Vieira
-          </p>
-          <span
-            >Resolução 02/2023 SEPT Aprova a Moção<br />
-            do Conselho Setorial pela revogação da<br />
-            Base Nacional Comum […]</span
-          >
-        </div>
-      </div>
 
-      <div class="news">
-        <div class="news-text">
-          <a href="#">
-            <h1>Eleições no SEPT: resultados divulgados.</h1>
-          </a>
-          <p>Publicado em: 3 de março de 2023 por Belinski</p>
-          <span
-            >Resultado da Eleição Setorial Edital <br />12/2023 Comissão
-            Eleitoral SEPT – Edital de <br />Resultado da consulta à comunidade
-            […]</span
-          >
-        </div>
-      </div>
-    </section>
-    <div class="more-link"><a href="">Mais notícias...</a></div>
-    <h1 style="margin: 60px 80px; color: #3681a6">Informativos</h1>
-    <!--Botões informativo-->
-    <section class="buttons-info">
-      <button
-        type="button"
-        class="btn-close btn-close-white"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-        style="padding-top: 25px"
-      ></button>
-
-      <div class="modal-body buttons-body-flex">
-        <button class="buttons-body-info" type="button">
-          <span>SISTEMA DE RESERVA DE SALAS</span>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M45.8333 10.4167V14.5834H35.4167L28.1875 25.0001H33.3333V29.1667H30.125L37.8542 45.8334H33.2708L31.3333 41.6667H13.2917L11.1458 45.8334H6.45834L15.0625 29.1667H14.5833C13.6458 29.1667 12.8542 28.5417 12.5833 27.7084L5.97917 8.00005L7.95834 7.29172C9.04167 6.95839 10.2292 7.56256 10.5833 8.64589L16.0833 25.0001H25.2083L32.4375 14.5834H25V10.4167H45.8333ZM19.7917 29.1667L15.4583 37.5001H29.3958L25.5417 29.1667H19.7917Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span>AGENDA SEPT</span>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.4167 45.8333C9.27084 45.8333 8.28959 45.425 7.47292 44.6083C6.65625 43.7916 6.24861 42.8111 6.25 41.6666V12.5C6.25 11.3541 6.65834 10.3729 7.475 9.55621C8.29167 8.73954 9.27223 8.3319 10.4167 8.33329H12.5V4.16663H16.6667V8.33329H33.3333V4.16663H37.5V8.33329H39.5833C40.7292 8.33329 41.7104 8.74163 42.5271 9.55829C43.3438 10.375 43.7514 11.3555 43.75 12.5V25H39.5833V20.8333H10.4167V41.6666H25V45.8333H10.4167ZM46.0938 35.4166L41.6667 30.9895L43.1771 29.4791C43.559 29.0972 44.0451 28.9062 44.6354 28.9062C45.2257 28.9062 45.7118 29.0972 46.0938 29.4791L47.6042 30.9895C47.9861 31.3715 48.1771 31.8576 48.1771 32.4479C48.1771 33.0382 47.9861 33.5243 47.6042 33.9062L46.0938 35.4166ZM29.1667 47.9166V43.4895L40.2083 32.4479L44.6354 36.875L33.5938 47.9166H29.1667ZM10.4167 16.6666H39.5833V12.5H10.4167V16.6666Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span>SECRETARIA ONLINE</span>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M46.875 37.5V34.375H43.5922C43.3907 33.3969 43.0023 32.4669 42.4484 31.6359L44.7766 29.3078L42.5672 27.0984L40.2391 29.4266C39.4081 28.8727 38.4781 28.4843 37.5 28.2828V25H34.375V28.2828C33.3969 28.4843 32.4669 28.8727 31.6359 29.4266L29.3078 27.0984L27.0984 29.3078L29.4266 31.6359C28.8727 32.4669 28.4843 33.3969 28.2828 34.375H25V37.5H28.2828C28.4843 38.4781 28.8727 39.4081 29.4266 40.2391L27.0984 42.5672L29.3078 44.7766L31.6359 42.4484C32.4669 43.0023 33.3969 43.3907 34.375 43.5922V46.875H37.5V43.5922C38.4781 43.3907 39.4081 43.0023 40.2391 42.4484L42.5672 44.7766L44.7766 42.5672L42.4484 40.2391C43.0023 39.4081 43.3907 38.4781 43.5922 37.5H46.875ZM35.9375 40.625C35.0104 40.625 34.1041 40.3501 33.3333 39.835C32.5624 39.3199 31.9616 38.5879 31.6068 37.7313C31.252 36.8748 31.1592 35.9323 31.3401 35.023C31.5209 34.1137 31.9674 33.2785 32.6229 32.6229C33.2785 31.9674 34.1137 31.5209 35.023 31.3401C35.9323 31.1592 36.8748 31.252 37.7313 31.6068C38.5879 31.9616 39.3199 32.5624 39.835 33.3333C40.3501 34.1041 40.625 35.0104 40.625 35.9375C40.6238 37.1803 40.1295 38.3719 39.2507 39.2507C38.3719 40.1295 37.1803 40.6238 35.9375 40.625Z"
-              fill="currentColor"
-            />
-            <path
-              d="M43.75 6.25H6.25C5.42145 6.25083 4.62708 6.58033 4.0412 7.16621C3.45533 7.75208 3.12583 8.54645 3.125 9.375V40.625C3.12583 41.4535 3.45533 42.2479 4.0412 42.8338C4.62708 43.4197 5.42145 43.7492 6.25 43.75H21.875V40.625H6.25V18.75H43.75V23.4375H46.875V9.375C46.8742 8.54645 46.5447 7.75208 45.9588 7.16621C45.3729 6.58033 44.5785 6.25083 43.75 6.25ZM43.75 15.625H6.25V9.375H43.75V15.625Z"
-              fill="currentColor"
-            />
-            <path
-              d="M31.25 14.0625C32.1129 14.0625 32.8125 13.3629 32.8125 12.5C32.8125 11.6371 32.1129 10.9375 31.25 10.9375C30.3871 10.9375 29.6875 11.6371 29.6875 12.5C29.6875 13.3629 30.3871 14.0625 31.25 14.0625Z"
-              fill="currentColor"
-            />
-            <path
-              d="M35.9375 14.0625C36.8004 14.0625 37.5 13.3629 37.5 12.5C37.5 11.6371 36.8004 10.9375 35.9375 10.9375C35.0746 10.9375 34.375 11.6371 34.375 12.5C34.375 13.3629 35.0746 14.0625 35.9375 14.0625Z"
-              fill="currentColor"
-            />
-            <path
-              d="M40.625 14.0625C41.4879 14.0625 42.1875 13.3629 42.1875 12.5C42.1875 11.6371 41.4879 10.9375 40.625 10.9375C39.7621 10.9375 39.0625 11.6371 39.0625 12.5C39.0625 13.3629 39.7621 14.0625 40.625 14.0625Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span>SISTEMA ELETRONICO DE INFORMAÇÕES</span>
-          <svg
-            width="60"
-            height="41"
-            viewBox="0 0 60 41"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <rect width="60" height="40.05" fill="url(#pattern0)" />
-            <defs>
-              <pattern
-                id="pattern0"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use
-                  xlink:href="#image0_295_34"
-                  transform="scale(0.0025 0.00374532)"
-                />
-              </pattern>
-              <image
-                id="image0_295_34"
-                width="400"
-                height="267"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAELCAMAAADAwCB+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAqSwAAKksBwmDfIQAAAwBQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Bz0LCAAAAQB0Uk5TAAsWdfH/FBXXApr3xTxYz/vzgA8b2QR22/34uCYGBRoRsbtQ6ygd2k3y4Uqc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"
-              />
-            </defs>
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span>PORTARIAS DE NOMEAÇÃO</span>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M33.3333 41.6666V8.33329H8.33334V39.5833C8.33334 40.1358 8.55283 40.6657 8.94353 41.0564C9.33423 41.4471 9.86414 41.6666 10.4167 41.6666H33.3333ZM39.5833 45.8333H10.4167C8.75907 45.8333 7.16936 45.1748 5.99725 44.0027C4.82515 42.8306 4.16667 41.2409 4.16667 39.5833V6.24996C4.16667 5.69743 4.38617 5.16752 4.77687 4.77682C5.16757 4.38612 5.69747 4.16663 6.25001 4.16663H35.4167C35.9692 4.16663 36.4991 4.38612 36.8898 4.77682C37.2805 5.16752 37.5 5.69743 37.5 6.24996V20.8333H45.8333V39.5833C45.8333 41.2409 45.1749 42.8306 44.0028 44.0027C42.8307 45.1748 41.2409 45.8333 39.5833 45.8333ZM37.5 25V39.5833C37.5 40.1358 37.7195 40.6657 38.1102 41.0564C38.5009 41.4471 39.0308 41.6666 39.5833 41.6666C40.1359 41.6666 40.6658 41.4471 41.0565 41.0564C41.4472 40.6657 41.6667 40.1358 41.6667 39.5833V25H37.5ZM12.5 12.5H25V25H12.5V12.5ZM16.6667 16.6666V20.8333H20.8333V16.6666H16.6667ZM12.5 27.0833H29.1667V31.25H12.5V27.0833ZM12.5 33.3333H29.1667V37.5H12.5V33.3333Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span
-            >SISTEMA DE CADASTRO<br />
-            SEPT</span
-          >
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_295_30)">
-              <path
-                d="M7.8125 5.46875V41.4062C7.8125 41.8375 8.1625 42.1875 8.59375 42.1875H18.5C19.1216 42.1875 19.7177 42.4344 20.1573 42.874C20.5968 43.3135 20.8438 43.9096 20.8438 44.5312C20.8438 45.1529 20.5968 45.749 20.1573 46.1885C19.7177 46.6281 19.1216 46.875 18.5 46.875H8.59375C7.14335 46.875 5.75235 46.2988 4.72676 45.2732C3.70117 44.2477 3.125 42.8567 3.125 41.4062V5.46875C3.125 2.45 5.575 0 8.59375 0H35.1562C38.175 0 40.625 2.45 40.625 5.46875V29.6437C40.625 30.2654 40.3781 30.8615 39.9385 31.301C39.499 31.7406 38.9029 31.9875 38.2812 31.9875C37.6596 31.9875 37.0635 31.7406 36.624 31.301C36.1844 30.8615 35.9375 30.2654 35.9375 29.6437V5.46875C35.9375 5.26155 35.8552 5.06284 35.7087 4.91632C35.5622 4.76981 35.3634 4.6875 35.1562 4.6875H8.59375C8.38655 4.6875 8.18784 4.76981 8.04132 4.91632C7.89481 5.06284 7.8125 5.26155 7.8125 5.46875ZM49.2938 35.2719L35.0531 49.175C34.611 49.6058 34.0168 49.8449 33.3995 49.8402C32.7823 49.8355 32.1917 49.5875 31.7562 49.15L25.6844 43.0563C25.2712 42.6112 25.0469 42.0231 25.0587 41.4159C25.0706 40.8087 25.3176 40.2298 25.7479 39.8012C26.1781 39.3726 26.7579 39.1277 27.3652 39.1182C27.9724 39.1086 28.5596 39.3351 29.0031 39.75L33.4375 44.2031L46.0187 31.9156C46.4638 31.4813 47.0632 31.2416 47.685 31.2492C48.3068 31.2569 48.9001 31.5112 49.3344 31.9562C49.7687 32.4013 50.0084 33.0007 50.0008 33.6225C49.9931 34.2443 49.7388 34.8376 49.2938 35.2719ZM14.8438 12.5H28.9062C29.5279 12.5 30.124 12.7469 30.5635 13.1865C31.0031 13.626 31.25 14.2221 31.25 14.8438C31.25 15.4654 31.0031 16.0615 30.5635 16.501C30.124 16.9406 29.5279 17.1875 28.9062 17.1875H14.8438C14.2221 17.1875 13.626 16.9406 13.1865 16.501C12.7469 16.0615 12.5 15.4654 12.5 14.8438C12.5 14.2221 12.7469 13.626 13.1865 13.1865C13.626 12.7469 14.2221 12.5 14.8438 12.5ZM12.5 24.2188C12.5 23.5971 12.7469 23.001 13.1865 22.5615C13.626 22.1219 14.2221 21.875 14.8438 21.875H21.0938C21.7154 21.875 22.3115 22.1219 22.751 22.5615C23.1906 23.001 23.4375 23.5971 23.4375 24.2188C23.4375 24.8404 23.1906 25.4365 22.751 25.876C22.3115 26.3156 21.7154 26.5625 21.0938 26.5625H14.8438C14.2221 26.5625 13.626 26.3156 13.1865 25.876C12.7469 25.4365 12.5 24.8404 12.5 24.2188Z"
-                fill="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_295_30">
-                <rect width="50" height="50" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span
-            >GRADE HORÁRIA<br />
-            (1º E 2º SEMESTRES)</span
-          >
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M25 12.1958V43.75" stroke="white" stroke-width="1.5" />
-            <path
-              d="M10.4167 18.7499L18.75 20.8333M10.4167 27.0833L18.75 29.1666M39.5833 27.0833L31.25 29.1666M39.5833 11.4583V19.8124C39.5833 20.3874 39.5833 20.6749 39.3854 20.7916C39.1875 20.9062 38.9188 20.777 38.3771 20.5208L35.7896 19.2916C35.6063 19.2041 35.5146 19.1624 35.4167 19.1624C35.3188 19.1624 35.2271 19.2041 35.0438 19.2916L32.4563 20.5208C31.9146 20.777 31.6438 20.9062 31.4479 20.7916C31.25 20.6728 31.25 20.3853 31.25 19.8124V14.4791"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
-            <path
-              d="M34.375 7.26661L33.9271 5.76661V5.76869L34.375 7.26661ZM47.3958 21.9541C47.3958 21.5397 47.2312 21.1423 46.9382 20.8493C46.6452 20.5562 46.2477 20.3916 45.8333 20.3916C45.4189 20.3916 45.0215 20.5562 44.7285 20.8493C44.4355 21.1423 44.2708 21.5397 44.2708 21.9541H47.3958ZM44.2708 14.5833C44.2708 14.9977 44.4355 15.3951 44.7285 15.6881C45.0215 15.9812 45.4189 16.1458 45.8333 16.1458C46.2477 16.1458 46.6452 15.9812 46.9382 15.6881C47.2312 15.3951 47.3958 14.9977 47.3958 14.5833H44.2708ZM2.60417 22.0208C2.60417 22.4352 2.76879 22.8326 3.06182 23.1256C3.35484 23.4187 3.75227 23.5833 4.16667 23.5833C4.58107 23.5833 4.9785 23.4187 5.27153 23.1256C5.56455 22.8326 5.72917 22.4352 5.72917 22.0208H2.60417ZM5.72917 29.1666C5.72917 28.7522 5.56455 28.3548 5.27153 28.0618C4.9785 27.7687 4.58107 27.6041 4.16667 27.6041C3.75227 27.6041 3.35484 27.7687 3.06182 28.0618C2.76879 28.3548 2.60417 28.7522 2.60417 29.1666H5.72917ZM41.7833 4.72494C39.4104 4.80827 36.3125 5.05411 33.9271 5.76869L34.8229 8.76244C36.8021 8.17077 39.5604 7.93119 41.8917 7.84994L41.7833 4.72494ZM33.9271 5.76869C31.8542 6.38952 29.5229 7.59994 27.7042 8.65202L29.2708 11.3583C31.0417 10.3333 33.1146 9.27494 34.8229 8.76244L33.9271 5.76869ZM8.20001 7.96452C10.2125 8.08952 12.4917 8.32911 14.1854 8.77702L14.9813 5.75411C12.9813 5.22494 10.4479 4.97286 8.39167 4.84577L8.20001 7.96452ZM14.1854 8.77702C16.1896 9.30619 18.6563 10.4624 20.6917 11.5374L22.15 8.77494C20.0771 7.67911 17.3479 6.37911 14.9813 5.75411L14.1854 8.77702ZM29.125 43.1874C31.1896 42.0874 33.7479 40.8749 35.8146 40.327L35.0188 37.3062C32.5813 37.9499 29.7563 39.3104 27.6563 40.4312L29.125 43.1874ZM35.8146 40.327C37.4875 39.8874 39.7354 39.6458 41.7333 39.5208L41.5375 36.402C39.4958 36.5312 37 36.7833 35.0188 37.3062L35.8146 40.327ZM22.3438 40.4312C20.2438 39.3104 17.4208 37.9499 14.9813 37.3062L14.1854 40.327C16.2521 40.8729 18.8104 42.0874 20.8729 43.1874L22.3438 40.4312ZM14.9813 37.3062C13.0021 36.7854 10.5021 36.5312 8.46042 36.402L8.26667 39.5208C10.2646 39.6458 12.5146 39.8874 14.1854 40.327L14.9813 37.3062ZM44.2708 33.6312C44.2708 35.0583 43.0875 36.3062 41.5375 36.402L41.7333 39.5208C44.8042 39.3291 47.3958 36.8312 47.3958 33.6312H44.2708ZM47.3958 10.277C47.3958 7.22702 44.9688 4.61452 41.7833 4.72494L41.8917 7.84994C43.1729 7.80411 44.2708 8.85619 44.2708 10.2749L47.3958 10.277ZM2.60417 33.6312C2.60417 36.8312 5.19584 39.3291 8.26667 39.5208L8.46042 36.402C6.91042 36.3062 5.72917 35.0583 5.72917 33.6312H2.60417ZM27.6563 40.4312C26.8379 40.8646 25.926 41.0891 25 41.0891C24.074 41.0891 23.1621 40.8646 22.3438 40.4312L20.875 43.1874C22.1454 43.8616 23.5618 44.2141 25 44.2141C26.4382 44.2141 27.8546 43.8616 29.125 43.1874L27.6563 40.4312ZM27.7042 8.65202C26.8636 9.1375 25.9141 9.40308 24.9436 9.42421C23.9731 9.44533 23.013 9.2213 22.1521 8.77286L20.6917 11.5374C22.0205 12.2331 23.5037 12.5793 25.0032 12.548C26.5028 12.5167 27.9701 12.1067 29.2688 11.3562L27.7042 8.65202ZM5.72917 10.4124C5.72917 8.96036 6.87917 7.88536 8.20001 7.96452L8.39167 4.84577C5.14584 4.64786 2.60417 7.29161 2.60417 10.4124H5.72917ZM47.3958 33.6312V21.9541H44.2708V33.6312H47.3958ZM47.3958 14.5833V10.277L44.2708 10.2749V14.5833H47.3958ZM5.72917 22.0208V10.4124H2.60417V22.0249H5.72917V22.0208ZM5.72917 33.6312V29.1666H2.60417V33.6312H5.72917Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span>BOLETIM (INFORMA SEPT)</span>
-          <img src="img/ziip.png" />
-        </button>
-
-        <button class="buttons-body-info" type="button">
-          <span>ADMINISTRATIVO (MANUTENÇÃO E FINANCEIRO)</span>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M25 14.8437C22.9913 14.8437 21.0277 15.4394 19.3575 16.5553C17.6873 17.6713 16.3856 19.2575 15.6169 21.1133C14.8482 22.9691 14.647 25.0112 15.0389 26.9813C15.4308 28.9515 16.3981 30.7611 17.8185 32.1815C19.2388 33.6019 21.0485 34.5692 23.0186 34.9611C24.9887 35.3529 27.0308 35.1518 28.8866 34.3831C30.7425 33.6144 32.3286 32.3126 33.4446 30.6425C34.5606 28.9723 35.1563 27.0087 35.1563 24.9999C35.1532 22.3073 34.0821 19.7258 32.1781 17.8218C30.2741 15.9178 27.6927 14.8468 25 14.8437ZM25 30.4687C23.9184 30.4687 22.8611 30.148 21.9617 29.547C21.0624 28.9461 20.3615 28.092 19.9475 27.0927C19.5336 26.0935 19.4253 24.9939 19.6363 23.933C19.8474 22.8722 20.3682 21.8978 21.133 21.133C21.8978 20.3681 22.8723 19.8473 23.9331 19.6363C24.9939 19.4253 26.0935 19.5336 27.0928 19.9475C28.0921 20.3614 28.9462 21.0623 29.5471 21.9617C30.148 22.861 30.4688 23.9183 30.4688 24.9999C30.4688 26.4504 29.8926 27.8414 28.867 28.8669C27.8414 29.8925 26.4504 30.4687 25 30.4687ZM42.9688 25.1542V24.8457L45.7031 21.4257C45.9327 21.1392 46.0917 20.8027 46.1673 20.4434C46.243 20.0842 46.2332 19.7122 46.1387 19.3574C45.6453 17.4962 44.9077 15.7086 43.9453 14.041C43.7599 13.723 43.5022 13.4531 43.1931 13.2532C42.884 13.0534 42.5321 12.9291 42.166 12.8906L37.8145 12.4023L37.5977 12.1855L37.1094 7.83198C37.0705 7.46624 36.9462 7.11478 36.7463 6.80601C36.5465 6.49725 36.2768 6.23985 35.959 6.05464C34.2912 5.08919 32.5029 4.34902 30.6406 3.85346C30.2855 3.76038 29.9135 3.752 29.5546 3.82901C29.1957 3.90602 28.8599 4.06626 28.5742 4.29682L25.1543 7.0312H24.8457L21.4258 4.29682C21.1392 4.0673 20.8028 3.9083 20.4435 3.83264C20.0842 3.75699 19.7122 3.7668 19.3574 3.86128C17.4958 4.35778 15.7082 5.0986 14.041 6.0644C13.7243 6.24885 13.4552 6.50502 13.2554 6.81235C13.0556 7.11967 12.9307 7.46957 12.8906 7.83393L12.4024 12.1855L12.1856 12.4023L7.83204 12.8906C7.4663 12.9294 7.11484 13.0538 6.80607 13.2536C6.49731 13.4535 6.23991 13.7232 6.0547 14.041C5.09196 15.7091 4.35443 17.4975 3.86134 19.3593C3.76718 19.7138 3.75754 20.0855 3.83319 20.4444C3.90884 20.8033 4.06766 21.1394 4.29689 21.4257L7.03126 24.8457V25.1542L4.29689 28.5742C4.06736 28.8607 3.90836 29.1972 3.83271 29.5565C3.75705 29.9157 3.76686 30.2877 3.86134 30.6425C4.35846 32.5042 5.09993 34.2919 6.06642 35.9589C6.25067 36.2755 6.50654 36.5444 6.8135 36.7442C7.12047 36.944 7.46997 37.069 7.834 37.1093L12.1856 37.5937L12.4024 37.8105L12.8906 42.1679C12.9295 42.5337 13.0539 42.8851 13.2537 43.1939C13.4536 43.5027 13.7233 43.7601 14.041 43.9453C15.7088 44.9107 17.4971 45.6509 19.3594 46.1464C19.7145 46.2395 20.0865 46.2479 20.4454 46.1709C20.8043 46.0939 21.1401 45.9336 21.4258 45.7031L24.8457 42.9687H25.1543L28.5742 45.7031C28.8608 45.9326 29.1973 46.0916 29.5565 46.1673C29.9158 46.2429 30.2878 46.2331 30.6426 46.1386C32.5037 45.6452 34.2914 44.9077 35.959 43.9453C36.2765 43.7613 36.5464 43.5053 36.7468 43.1979C36.9473 42.8906 37.0729 42.5405 37.1133 42.1757L37.5977 37.8242L37.8145 37.6074L42.168 37.1093C42.5327 37.0689 42.8828 36.9434 43.1902 36.7429C43.4975 36.5424 43.7535 36.2725 43.9375 35.955C44.903 34.2873 45.6431 32.4989 46.1387 30.6367C46.2322 30.2828 46.2415 29.9119 46.1659 29.5537C46.0902 29.1955 45.9318 28.8601 45.7031 28.5742L42.9688 25.1542ZM38.2578 24.1992C38.2891 24.7326 38.2891 25.2673 38.2578 25.8007C38.2229 26.3806 38.4046 26.9527 38.7676 27.4062L41.2754 30.541C41.0387 31.2417 40.7562 31.9261 40.4297 32.5898L36.4395 33.0332C35.8618 33.0992 35.3292 33.3777 34.9453 33.8144C34.5905 34.2141 34.2122 34.5924 33.8125 34.9472C33.3758 35.3311 33.0973 35.8636 33.0313 36.4414L32.5899 40.4296C31.9263 40.7574 31.2418 41.0412 30.541 41.2792L27.4063 38.7695C26.9902 38.4375 26.4736 38.2571 25.9414 38.2578H25.8008C25.2674 38.289 24.7326 38.289 24.1992 38.2578C23.6198 38.2234 23.0481 38.4043 22.5938 38.7656L19.459 41.2753C18.7583 41.0386 18.0739 40.7561 17.4102 40.4296L16.9668 36.4394C16.9008 35.8617 16.6223 35.3292 16.1856 34.9453C15.7858 34.5905 15.4076 34.2122 15.0527 33.8125C14.6689 33.3757 14.1363 33.0973 13.5586 33.0312L9.57032 32.5898C9.24253 31.9262 8.95872 31.2418 8.72072 30.541L11.2285 27.4062C11.5915 26.9527 11.7732 26.3806 11.7383 25.8007C11.707 25.2673 11.707 24.7326 11.7383 24.1992C11.7732 23.6193 11.5915 23.0472 11.2285 22.5937L8.72462 19.4589C8.96135 18.7582 9.24386 18.0738 9.57032 17.4101L13.5606 16.9667C14.1383 16.9007 14.6708 16.6222 15.0547 16.1855C15.4095 15.7858 15.7878 15.4075 16.1875 15.0527C16.6243 14.6688 16.9027 14.1363 16.9688 13.5585L17.4102 9.57026C18.0738 9.24247 18.7582 8.95866 19.459 8.72065L22.5938 11.2304C23.0481 11.5917 23.6198 11.7726 24.1992 11.7382C24.7326 11.707 25.2674 11.707 25.8008 11.7382C26.3804 11.7737 26.9525 11.5927 27.4063 11.2304L30.541 8.72065C31.2418 8.95866 31.9263 9.24247 32.5899 9.57026L33.0332 13.5605C33.0993 14.1382 33.3777 14.6707 33.8145 15.0546C34.2142 15.4094 34.5925 15.7877 34.9473 16.1874C35.3312 16.6242 35.8637 16.9026 36.4414 16.9687L40.4297 17.4101C40.7575 18.0737 41.0413 18.7581 41.2793 19.4589L38.7715 22.5937C38.4071 23.0466 38.224 23.6188 38.2578 24.1992Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-      </div>
-    </section>
     <footer class="footer">
       <div class="links-container">
         <!--Coluna 1-->
@@ -1117,5 +1148,7 @@
         Tecnologia da Informação e Comunicação) da UFPR
       </div>
     </footer>
+
+    <script src="js/enviar.js"></script>
   </body>
 </html>
