@@ -459,3 +459,43 @@ label {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/*Botão acessibilidade*/
+.light {
+  --bodybkg: white;
+  --btntxt: "Ligar Alto-contraste";
+  --btnfg: #3681a6;
+  --btnbkg: #fff;
+  --pcolor: #3681a6;
+}
+
+.dark {
+  --bodybkg: black;
+  --btntxt: "Desligar Alto-contraste";
+  --btnfg: white;
+  --btnbkg: #3681a6;
+  --pcolor: white;
+}
+
+#contraste {
+  background-color: var(--btnbkg);
+  color: var(--btnfg);
+}
+
+#contraste:after {
+  content: var(--btntxt);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--pcolor);
+}
+
+body {
+  background-color: var(--bodybkg);
+}

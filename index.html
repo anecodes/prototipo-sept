@@ -40,7 +40,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body class="light">
     <nav class="bar-gov">
       <ul>
         <li>
@@ -198,7 +198,11 @@
                   </button>
 
                   <!--Botão 4-->
-                  <button class="button-body-access" type="button">
+                  <button
+                    class="button-body-access"
+                    id="contraste"
+                    type="button"
+                  >
                     <svg
                       width="67"
                       height="67"
@@ -211,8 +215,6 @@
                         fill="currentColor"
                       />
                     </svg>
-
-                    <span>Contraste</span>
                   </button>
 
                   <!--Botão 5-->
@@ -578,13 +580,13 @@
     <h1 style="margin: 60px 80px; color: #3681a6">Informativos</h1>
     <!--Botões informativo-->
     <section class="buttons-info">
-      <button
+      <!-- <button
         type="button"
         class="btn-close btn-close-white"
         data-bs-dismiss="modal"
         aria-label="Close"
         style="padding-top: 25px"
-      ></button>
+      ></button> -->
 
       <div class="modal-body buttons-body-flex">
         <button class="buttons-body-info" type="button">
@@ -1124,5 +1126,6 @@
         Tecnologia da Informação e Comunicação) da UFPR
       </div>
     </footer>
+    <script src="js/acessibilidade.js"></script>
   </body>
 </html>
